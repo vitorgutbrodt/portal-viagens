@@ -1,6 +1,8 @@
+import styles from './footer.module.css';
+
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer} >
       <p>Copyright © 2026 Portal Viagens. Todos os direitos reservados.</p>
     </footer>
   )

@@ -7,7 +7,7 @@ import {destinos} from "@/lib/destinos";
 export default function Home() {
   return (
     <>
-    <Title title="Bem Vindo ao Portal Viagens" />
+    <Title title="Escolha seu destino:" />
     <Grid destinos={destinos}/>  
     </>
   );

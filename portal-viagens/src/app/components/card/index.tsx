@@ -1,5 +1,6 @@
 import { Destino } from "@/types/types";
 import Link from "next/link";
+import styles from './card.module.css';
 
 type Props = {
     destino: Destino
@@ -8,12 +9,12 @@ type Props = {
 const Card = ({destino} : Props) => {
     const {id, nome, imagem, description, link} = destino;
     return (
-        <div key={id}>            
-                <img src={imagem} alt={`Foto de ${nome}`} width={300} height={200}/>
-            <Link href={link}>
+        <div className={styles.card} key={id}>            
+                <img src={imagem} alt={`Foto de ${nome}`} width={300} height={200} className={styles.card__image}/>
+            <Link className={styles.card__name}href={link}>
                 <h3>{nome}</h3>
             </Link>            
-            <p>{description}</p>            
+            <p className={styles.card__description}>{description}</p>            
         </div>
     )
 }
