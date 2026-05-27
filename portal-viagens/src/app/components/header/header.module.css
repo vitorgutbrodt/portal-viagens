@@ -9,3 +9,16 @@
     text-decoration: none;
 }
 
+.header__nav {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    margin-left: 5em;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
