@@ -11,7 +11,7 @@ const Card = ({destino} : Props) => {
     return (
         <div className={styles.card} key={id}>            
                 <img src={imagem} alt={`Foto de ${nome}`} width={300} height={200} className={styles.card__image}/>
-            <Link className={styles.card__name}href={link}>
+            <Link className={styles.card__name} href={link}>
                 <h3>{nome}</h3>
             </Link>            
             <p className={styles.card__description}>{description}</p>            
